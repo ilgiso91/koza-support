@@ -18,26 +18,23 @@ if (menuButton && mobileMenu) {
   mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
 }
 
-document.querySelectorAll(".media-frame img").forEach((image) => {
-  const frame = image.closest(".media-frame");
-  if (!frame) return;
-
-  const markError = () => frame.classList.add("media-error");
-  image.addEventListener("error", markError, { once: true });
-  if (image.complete && image.naturalWidth === 0) markError();
-});
-
 document.querySelectorAll(".faq-list details").forEach((item) => {
   item.addEventListener("toggle", () => {
     if (!item.open) return;
+
     document.querySelectorAll(".faq-list details[open]").forEach((other) => {
       if (other !== item) other.open = false;
     });
   });
 });
 
-const linkedFaq = window.location.hash ? document.querySelector(window.location.hash) : null;
-if (linkedFaq instanceof HTMLDetailsElement) linkedFaq.open = true;
+const openLinkedFaq = () => {
+  const linkedFaq = window.location.hash ? document.querySelector(window.location.hash) : null;
+  if (linkedFaq instanceof HTMLDetailsElement) linkedFaq.open = true;
+};
+
+openLinkedFaq();
+window.addEventListener("hashchange", openLinkedFaq);
 
 const year = document.querySelector("#year");
 if (year) year.textContent = String(new Date().getFullYear());

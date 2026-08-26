@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f6f6f4" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#171416" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f8f5f5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#191517" media="(prefers-color-scheme: dark)" />
     <meta
       name="description"
       content="KOZA Hamilelik Takibi uygulaması için yardım, sık sorulan sorular ve iletişim bilgileri."
     />
     <meta property="og:title" content="KOZA Destek" />
-    <meta property="og:description" content="KOZA uygulaması için genel yardım ve iletişim bilgileri." />
+    <meta property="og:description" content="KOZA uygulaması için yardım ve iletişim bilgileri." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/screens/koza-with-you.jpg" />
     <title>KOZA Destek</title>
@@ -26,18 +26,15 @@
     <header class="site-header">
       <nav class="nav-inner" aria-label="Ana menü">
         <a class="brand" href="#top" aria-label="KOZA Destek ana sayfa">
-          <img src="assets/koza-icon.png" alt="" width="38" height="38" />
-          <span>KOZA</span>
-          <small>Destek</small>
+          <img src="assets/koza-icon.png" alt="" width="40" height="40" />
+          <span>KOZA <small>Destek</small></span>
         </a>
 
         <div class="desktop-nav">
           <a href="#konular">Yardım konuları</a>
           <a href="#sorular">Sık sorulanlar</a>
-          <a href="#uygulama">Uygulama</a>
+          <a href="#iletisim">İletişim</a>
         </div>
-
-        <a class="button button-small desktop-cta" href="mailto:ismailturanli91@gmail.com?subject=KOZA%20Destek%20Talebi">E-posta</a>
 
         <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menüyü aç">
           <span></span>
@@ -47,8 +44,7 @@
         <div class="mobile-menu" id="mobile-menu" hidden>
           <a href="#konular">Yardım konuları</a>
           <a href="#sorular">Sık sorulanlar</a>
-          <a href="#uygulama">Uygulama</a>
-          <a href="mailto:ismailturanli91@gmail.com?subject=KOZA%20Destek%20Talebi">E-posta</a>
+          <a href="#iletisim">İletişim</a>
         </div>
       </nav>
     </header>
@@ -56,128 +52,143 @@
     <main id="main">
       <section class="hero" id="top">
         <div class="hero-copy">
-          <h1>KOZA için yardım ve destek.</h1>
-          <p>Hesap, bildirimler ve uygulama kullanımıyla ilgili bilgilere ulaşın.</p>
-          <a class="button" href="#konular">Yardım konuları</a>
+          <p class="eyebrow">KOZA Hamilelik Takibi</p>
+          <h1>KOZA Destek</h1>
+          <p>Uygulama kullanımı, hesap, bildirim ve abonelik konularında yardım alın.</p>
+          <div class="hero-actions">
+            <a class="button" href="#konular">Yardım konuları</a>
+            <a class="text-link" href="mailto:ismailturanli91@gmail.com?subject=KOZA%20Destek%20Talebi">E-posta gönder</a>
+          </div>
         </div>
 
-        <figure class="hero-media media-frame">
-          <img src="assets/screens/koza-with-you.jpg" alt="KOZA uygulamasını tanıtan hamile anne görseli" width="738" height="1600" />
-          <figcaption>KOZA Hamilelik Takibi</figcaption>
-        </figure>
+        <div class="hero-image">
+          <img
+            src="assets/screens/koza-with-you.jpg"
+            alt="KOZA uygulamasını tanıtan hamile anne görseli"
+            width="738"
+            height="1600"
+            fetchpriority="high"
+          />
+        </div>
       </section>
 
       <section class="section topics" id="konular">
-        <div class="section-intro">
-          <h2>Yardım konuları</h2>
-          <p>İhtiyacınız olan başlığı seçin.</p>
+        <div class="section-heading">
+          <h2>Nasıl yardımcı olabiliriz?</h2>
+          <p>En çok ihtiyaç duyulan destek başlıklarına doğrudan ulaşın.</p>
         </div>
 
         <div class="topic-list">
           <a class="topic-row" href="#hesap-ve-veriler">
-            <span><strong>Hesap ve veriler</strong><small>Gebelik bilgileri, profil ve veri seçenekleri</small></span>
-            <span aria-hidden="true">↗</span>
+            <span>
+              <strong>Hesap ve gebelik bilgileri</strong>
+              <small>Profil, gebelik tarihi ve veri seçenekleri</small>
+            </span>
+            <span aria-hidden="true">Aç</span>
           </a>
           <a class="topic-row" href="#bildirimler">
-            <span><strong>Bildirimler</strong><small>İzinler ve uygulama içi hatırlatıcılar</small></span>
-            <span aria-hidden="true">↗</span>
+            <span>
+              <strong>Bildirimler</strong>
+              <small>İzinler ve uygulama içi hatırlatıcılar</small>
+            </span>
+            <span aria-hidden="true">Aç</span>
           </a>
           <a class="topic-row" href="#koza-ai">
-            <span><strong>KOZA AI</strong><small>Asistanın kapsamı ve güvenli kullanımı</small></span>
-            <span aria-hidden="true">↗</span>
+            <span>
+              <strong>KOZA AI</strong>
+              <small>Asistanın kapsamı ve güvenli kullanımı</small>
+            </span>
+            <span aria-hidden="true">Aç</span>
           </a>
           <a class="topic-row" href="#abonelikler">
-            <span><strong>Abonelikler</strong><small>Apple üzerinden plan yönetimi</small></span>
-            <span aria-hidden="true">↗</span>
+            <span>
+              <strong>Abonelikler</strong>
+              <small>Apple üzerinden abonelik yönetimi</small>
+            </span>
+            <span aria-hidden="true">Aç</span>
           </a>
-        </div>
-      </section>
-
-      <section class="section showcase" id="uygulama">
-        <div class="section-intro showcase-intro">
-          <h2>Uygulama ekranları</h2>
-          <p>Ekranlar sürüme, bölgeye ve cihaz ayarlarına göre değişebilir.</p>
-        </div>
-
-        <div class="gallery" tabindex="0" aria-label="KOZA uygulama görselleri">
-          <figure><div class="media-frame"><img src="assets/screens/week-by-week.jpg" alt="Hafta hafta bebek gelişimi ekranı" width="738" height="1600" loading="lazy" /></div><figcaption>Hafta hafta gelişim</figcaption></figure>
-          <figure><div class="media-frame"><img src="assets/screens/koza-ai.jpg" alt="KOZA AI asistan ekranı" width="738" height="1600" loading="lazy" /></div><figcaption>KOZA AI</figcaption></figure>
-          <figure><div class="media-frame"><img src="assets/screens/articles.jpg" alt="Hamilelik içerikleri ekranı" width="738" height="1600" loading="lazy" /></div><figcaption>Bilgilendirici içerikler</figcaption></figure>
-          <figure><div class="media-frame"><img src="assets/screens/tools.jpg" alt="KOZA takip araçları ekranı" width="738" height="1600" loading="lazy" /></div><figcaption>Takip araçları</figcaption></figure>
-          <figure><div class="media-frame"><img src="assets/screens/water.jpg" alt="Su takibi ekranı" width="738" height="1600" loading="lazy" /></div><figcaption>Su takibi</figcaption></figure>
-          <figure><div class="media-frame"><img src="assets/screens/contractions.jpg" alt="Sancı kaydı ekranı" width="738" height="1600" loading="lazy" /></div><figcaption>Sancı kaydı</figcaption></figure>
-          <figure><div class="media-frame"><img src="assets/screens/birth.jpg" alt="Doğuma hazırlık ekranı" width="738" height="1600" loading="lazy" /></div><figcaption>Doğuma hazırlık</figcaption></figure>
-          <figure><div class="media-frame"><img src="assets/screens/movement.jpg" alt="Egzersiz takibi ekranı" width="738" height="1600" loading="lazy" /></div><figcaption>Hareket takibi</figcaption></figure>
-          <figure><div class="media-frame"><img src="assets/screens/kegel.jpg" alt="Kegel egzersizi ekranı" width="738" height="1600" loading="lazy" /></div><figcaption>Kegel egzersizleri</figcaption></figure>
-          <figure><div class="media-frame"><img src="assets/screens/daily-tracking.jpg" alt="KOZA günlük gebelik takibi ekranı" width="738" height="1600" loading="lazy" /></div><figcaption>Günlük takip</figcaption></figure>
         </div>
       </section>
 
       <section class="section faq-section" id="sorular">
-        <div class="section-intro faq-intro">
+        <div class="section-heading">
           <h2>Sık sorulan sorular</h2>
-          <p>Adımlar uygulama sürümüne ve cihaz ayarlarına göre farklılık gösterebilir.</p>
+          <p>Adımlar uygulama sürümüne ve cihaz ayarlarına göre değişebilir.</p>
         </div>
 
         <div class="faq-list">
           <details id="hesap-ve-veriler">
             <summary>Gebelik haftamı nasıl güncellerim?</summary>
-            <p>Profil veya gebelik ayarları alanından son adet tarihi ya da tahmini doğum tarihini güncelleyebilirsiniz. Değişiklikler günlük takip ekranına yansır.</p>
+            <p>Profil veya gebelik ayarları alanından son adet tarihini ya da tahmini doğum tarihini güncelleyebilirsiniz.</p>
           </details>
           <details id="bildirimler">
             <summary>Bildirimler gelmiyorsa ne yapmalıyım?</summary>
-            <p>iPhone Ayarlar bölümünde KOZA bildirim iznini ve uygulama içindeki hatırlatıcıları kontrol edin. Bildirimler kolaylık amaçlıdır; kesintisiz teslimat veya klinik izleme garantisi verilmez.</p>
+            <p>iPhone Ayarlar bölümünde KOZA bildirim iznini ve uygulama içindeki hatırlatıcıları kontrol edin. Bildirimler kolaylık amaçlıdır ve klinik izleme sağlamaz.</p>
           </details>
           <details id="koza-ai">
             <summary>KOZA AI tıbbi tavsiye verir mi?</summary>
-            <p>Hayır. KOZA AI genel bilgilendirme sunar; tanı, tedavi veya kişisel tıbbi öneri yerine geçmez. Sağlık kararlarınızı sizi takip eden hekimle birlikte alın.</p>
+            <p>Hayır. KOZA AI genel bilgilendirme sunar. Tanı, tedavi veya kişisel tıbbi öneri yerine geçmez. Sağlık kararlarınızı sizi takip eden hekimle birlikte alın.</p>
           </details>
           <details>
             <summary>Hesap ve veri silme seçenekleri nerede?</summary>
-            <p>Uygulamadaki Profil alanında hesap silme seçeneği bulunur. Veri saklama ve silme kapsamı için güncel Gizlilik Politikası'nı inceleyin; ek bir talep için e-posta ile iletişime geçin.</p>
+            <p>Uygulamadaki Profil alanında hesap silme seçeneği bulunur. Veri saklama ve silme kapsamı için güncel Gizlilik Politikası'nı inceleyebilirsiniz.</p>
           </details>
           <details>
-            <summary>Sancı sayacı ne zaman kullanılmalı?</summary>
-            <p>Sayaç, sancıların süre ve aralıklarını kaydetmeye yardımcı olur. Su gelmesi, kanama, hareket azalması veya endişe veren bir durumda uygulamayı beklemeyin.</p>
-          </details>
-          <details>
-            <summary>Su, kilo ve hareket kayıtları nasıl çalışır?</summary>
-            <p>Bu araçlar kişisel kayıt ve özetleme amacıyla sunulur. Gösterilen hedefler, grafikler ve hesaplamalar tıbbi değerlendirme veya klinik takip değildir.</p>
+            <summary>Takip araçları tıbbi değerlendirme yapar mı?</summary>
+            <p>Hayır. Su, kilo, hareket ve sancı araçları kişisel kayıt amacıyla sunulur. Gösterilen hedefler ve özetler tıbbi değerlendirme veya klinik takip değildir.</p>
           </details>
           <details id="abonelikler">
             <summary>Aboneliğimi nasıl yönetebilirim?</summary>
-            <p>Abonelikler Apple tarafından işlenir. Planınızı iPhone Ayarlar bölümünde Apple Hesabı ve Abonelikler yolunu izleyerek yönetebilirsiniz. Uygulamayı silmek aboneliği iptal etmez.</p>
+            <p>Abonelikler Apple tarafından işlenir. iPhone Ayarlar bölümünde Apple Hesabı ve Abonelikler yolunu izleyerek planınızı yönetebilirsiniz. Uygulamayı silmek aboneliği iptal etmez.</p>
           </details>
           <details>
-            <summary>Bir hata bildirirken neleri eklemeliyim?</summary>
-            <p>Sorunun görüldüğü ekranı, tekrar etme adımlarını ve iOS sürümünü yazın. Kişisel sağlık bilgilerinizi, şifrelerinizi veya özel verilerinizi paylaşmayın.</p>
+            <summary>Acil bir durumda KOZA kullanılmalı mı?</summary>
+            <p>Hayır. Su gelmesi, kanama, hareket azalması, şiddetli ağrı veya endişe veren başka bir durumda uygulamayı beklemeden sağlık hizmetine başvurun.</p>
+          </details>
+          <details>
+            <summary>Bir hata bildirirken ne yazmalıyım?</summary>
+            <p>Sorunun kısa açıklamasını ve iOS sürümünüzü yazmanız yeterlidir. Parola, doğrulama kodu, ödeme bilgisi, kimlik bilgisi veya kişisel sağlık kaydı paylaşmayın.</p>
           </details>
         </div>
       </section>
 
-      <section class="notice" aria-labelledby="notice-title">
-        <div class="notice-inner">
-          <h2 id="notice-title">Önemli bilgilendirme</h2>
-          <div class="notice-points">
-            <p><strong>Tıbbi hizmet değildir.</strong> KOZA tanı, tedavi, tıbbi tavsiye veya acil yardım sağlamaz.</p>
-            <p><strong>AI yanıtları hata içerebilir.</strong> Yanıtlar bir sağlık profesyoneli tarafından yazılmaz veya kullanımdan önce incelenmez.</p>
-            <p><strong>Kesintisiz çalışma taahhüdü yoktur.</strong> Özellikler değişebilir, hata oluşabilir veya üçüncü taraf hizmetlerden etkilenebilir.</p>
-          </div>
+      <section class="section contact" id="iletisim">
+        <div class="contact-copy">
+          <h2>Bizimle iletişime geçin</h2>
+          <p>Teknik bir sorun için e-posta gönderebilirsiniz. Yanıt süresiyle ilgili garanti verilmez.</p>
+          <a class="button" href="mailto:ismailturanli91@gmail.com?subject=KOZA%20Destek%20Talebi">E-posta gönder</a>
+        </div>
+
+        <div class="contact-links" aria-label="Destek ve yasal bağlantılar">
+          <a href="mailto:ismailturanli91@gmail.com?subject=KOZA%20Destek%20Talebi">
+            <span>E-posta</span>
+            <strong>ismailturanli91@gmail.com</strong>
+          </a>
+          <a href="https://ilgiso91.github.io/turanli-privacy/koza.html" target="_blank" rel="noreferrer">
+            <span>Yasal</span>
+            <strong>Gizlilik Politikası</strong>
+          </a>
+          <a href="https://ilgiso91.github.io/turanli-terms/koza.html" target="_blank" rel="noreferrer">
+            <span>Yasal</span>
+            <strong>Kullanım Koşulları</strong>
+          </a>
         </div>
       </section>
 
-      <section class="contact" id="destek">
+      <aside class="safety-note" aria-labelledby="safety-title">
         <div>
-          <h2>Teknik bir sorun mu var?</h2>
-          <p>Mesajınıza kişisel sağlık bilgisi, şifre veya özel veri eklemeyin.</p>
+          <h2 id="safety-title">Güvenliğiniz için</h2>
+          <p>Destek talebinde parola, doğrulama kodu, ödeme bilgisi, kimlik bilgisi veya kişisel sağlık kaydı paylaşmayın.</p>
         </div>
-        <a class="button" href="mailto:ismailturanli91@gmail.com?subject=KOZA%20Destek%20Talebi">E-posta</a>
-      </section>
+        <p>KOZA tıbbi hizmet, tanı, tedavi veya acil yardım sağlamaz.</p>
+      </aside>
     </main>
 
     <footer class="site-footer">
-      <div class="footer-brand"><img src="assets/koza-icon.png" alt="" width="34" height="34" loading="lazy" /><span>KOZA</span></div>
-      <p>KOZA tıbbi tanı veya tedavi hizmeti sunmaz.</p>
+      <div class="footer-brand">
+        <img src="assets/koza-icon.png" alt="" width="34" height="34" />
+        <span>KOZA</span>
+      </div>
       <nav class="legal-links" aria-label="Yasal bağlantılar">
         <a href="https://ilgiso91.github.io/turanli-privacy/koza.html" target="_blank" rel="noreferrer">Gizlilik Politikası</a>
         <a href="https://ilgiso91.github.io/turanli-terms/koza.html" target="_blank" rel="noreferrer">Kullanım Koşulları</a>
