@@ -310,6 +310,31 @@ h2 {
   font-weight: 690;
 }
 
+.app-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.app-gallery figure {
+  margin: 0;
+}
+
+.app-gallery img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.app-gallery figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 620;
+}
+
 .faq-section {
   max-width: 900px;
 }
@@ -487,6 +512,24 @@ h2 {
     margin-bottom: 0;
   }
 
+  .app-gallery {
+    width: calc(100vw - max(24px, (100vw - 1080px) / 2));
+    padding: 0 24px 18px 0;
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(220px, 272px);
+    gap: 16px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: var(--line) transparent;
+    scrollbar-width: thin;
+  }
+
+  .app-gallery figure {
+    scroll-snap-align: start;
+  }
+
   .site-footer {
     grid-template-columns: auto 1fr;
   }
@@ -616,6 +659,12 @@ h2 {
 
   .topic-row small {
     max-width: 260px;
+  }
+
+  .app-gallery {
+    width: calc(100vw - 16px);
+    padding-right: 16px;
+    grid-auto-columns: min(74vw, 260px);
   }
 
   .faq-list summary {
